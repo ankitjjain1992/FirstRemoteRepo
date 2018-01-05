@@ -16,7 +16,6 @@ public class BaseClass {
 		driver.manage().window().maximize();
 		Reporter.log("Gmail is opening");
 		driver.get("https://accounts.google.com");
-		
 	}
 	
 	@AfterClass
@@ -24,5 +23,6 @@ public class BaseClass {
 	{
 		driver.quit();
 	}
+	
 
 }
