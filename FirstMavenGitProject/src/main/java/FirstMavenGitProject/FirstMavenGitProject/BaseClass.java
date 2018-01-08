@@ -5,17 +5,21 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 
 public class BaseClass {
 	WebDriver driver;
+	@Parameters({ "Url" })
 	@BeforeClass
-	public void Precondition()
+	public void Precondition(String Url)
 	{
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
-		Reporter.log("Gmail is opening");
-		driver.get("https://accounts.google.com");
+		
+		
+		Reporter.log("Opening :"+Url,true);
+		driver.get(Url);
 	}
 	
 	@AfterClass
