@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Testnew">
+  <!-- test name="Testnew">
   <parameter name="Url" value="http://newtours.demoaut.com/" />
   <parameter name="UserName" value="mercury" />
   <parameter name="Password" value="mercury" />
   <classes>
       <class name="FirstMavenGitProject.FirstMavenGitProject.NewTourTest"/>
     </classes>
-  </test> <!-- Test1 -->
-  <test thread-count="5" name="Testway">
+  </test--> <!-- Test1 -->
+  <test name="Testway">
   <parameter name="Url" value="http://www.way2automation.com" />
   <classes>
-      <class name="FirstMavenGitProject.FirstMavenGitProject.Way2Automation"/>
+     <class name="FirstMavenGitProject.FirstMavenGitProject.Way2Automation"/>
     </classes>
     </test> <!-- Test2 -->
 </suite> <!-- Suite -->
